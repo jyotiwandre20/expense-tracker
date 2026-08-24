@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Add Expense{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-md-7 col-lg-6">
+
+        <div class="card shadow-sm">
+
+            <div class="card-header bg-success text-white text-center">
+
+                <h4 class="mb-0">
+                    ➕ Add Expense
+                </h4>
+
+            </div>
+
+            <div class="card-body p-4">
+
+                <form method="POST">
+
+                    <!-- Title -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Expense Title
+                        </label>
+
+                        <input type="text"
+                               name="title"
+                               class="form-control"
+                               placeholder="e.g. Grocery"
+                               required>
+
+                    </div>
+
+
+                    <!-- Category -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Category
+                        </label>
+
+                        <select name="category"
+                                class="form-select"
+                                required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Food">
+                                Food
+                            </option>
+
+                            <option value="Travel">
+                                Travel
+                            </option>
+
+                            <option value="Shopping">
+                                Shopping
+                            </option>
+
+                            <option value="Bills">
+                                Bills
+                            </option>
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+                            <option value="Health">
+                                Health
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Amount -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Amount (₹)
+                        </label>
+
+                        <input type="number"
+                               name="amount"
+                               class="form-control"
+                               placeholder="e.g. 500"
+                               step="0.01"
+                               min="0.01"
+                               required>
+
+                    </div>
+
+
+                    <!-- Date -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label fw-bold">
+                            Date
+                        </label>
+
+                        <input type="date"
+                               name="date"
+                               class="form-control"
+                               required>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div class="d-flex justify-content-between mt-4">
+
+                        <a href="/"
+                           class="btn btn-secondary">
+
+                            ← Cancel
+
+                        </a>
+
+                        <button type="submit"
+                                class="btn btn-success">
+
+                            💾 Save Expense
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
