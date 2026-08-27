@@ -4,7 +4,8 @@ A simple and professional web application to track and manage daily expenses.
 
 ## 🚀 Live Demo
 
-Coming soon...
+[Click here to view the live projects]
+https://expense-tracker-zuee.onrender.com
 
 ## 🛠️ Technologies Used
 
